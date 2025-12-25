@@ -1,0 +1,213 @@
+# ╔══════════════════════════════════════════════════════════════════════════╗
+# ║                        DUNST - Catppuccin Mocha                          ║
+# ╚══════════════════════════════════════════════════════════════════════════╝
+
+[global]
+    # ═══════════════════════════════════════════════════════════════════════
+    # Display
+    # ═══════════════════════════════════════════════════════════════════════
+    
+    monitor = 0
+    follow = mouse
+    
+    # Geometry
+    width = 300
+    height = 300
+    origin = top-right
+    offset = 10x10
+    scale = 0
+    notification_limit = 5
+    
+    # ═══════════════════════════════════════════════════════════════════════
+    # Progress bar
+    # ═══════════════════════════════════════════════════════════════════════
+    
+    progress_bar = true
+    progress_bar_height = 10
+    progress_bar_frame_width = 1
+    progress_bar_min_width = 150
+    progress_bar_max_width = 300
+    progress_bar_corner_radius = 5
+    
+    # ═══════════════════════════════════════════════════════════════════════
+    # Appearance
+    # ═══════════════════════════════════════════════════════════════════════
+    
+    indicate_hidden = yes
+    transparency = 0
+    separator_height = 2
+    padding = 15
+    horizontal_padding = 15
+    text_icon_padding = 15
+    frame_width = 2
+    frame_color = "#89b4fa"
+    gap_size = 5
+    separator_color = frame
+    sort = yes
+    
+    # ═══════════════════════════════════════════════════════════════════════
+    # Text
+    # ═══════════════════════════════════════════════════════════════════════
+    
+    font = JetBrains Mono 10
+    line_height = 0
+    markup = full
+    format = "<b>%s</b>\n%b"
+    alignment = left
+    vertical_alignment = center
+    show_age_threshold = 60
+    ellipsize = middle
+    ignore_newline = no
+    stack_duplicates = true
+    hide_duplicate_count = false
+    show_indicators = yes
+    
+    # ═══════════════════════════════════════════════════════════════════════
+    # Icons
+    # ═══════════════════════════════════════════════════════════════════════
+    
+    enable_recursive_icon_lookup = true
+    icon_theme = "Papirus-Dark, Adwaita"
+    icon_position = left
+    min_icon_size = 32
+    max_icon_size = 64
+    icon_path = /usr/share/icons/Papirus-Dark/48x48/status/:/usr/share/icons/Papirus-Dark/48x48/devices/:/usr/share/icons/Papirus-Dark/48x48/apps/
+    
+    # ═══════════════════════════════════════════════════════════════════════
+    # History
+    # ═══════════════════════════════════════════════════════════════════════
+    
+    sticky_history = yes
+    history_length = 20
+    
+    # ═══════════════════════════════════════════════════════════════════════
+    # Misc/Advanced
+    # ═══════════════════════════════════════════════════════════════════════
+    
+    dmenu = /usr/bin/rofi -dmenu -p dunst
+    browser = /usr/bin/firefox --new-tab
+    always_run_script = true
+    title = Dunst
+    class = Dunst
+    corner_radius = 10
+    ignore_dbusclose = false
+    
+    # ═══════════════════════════════════════════════════════════════════════
+    # Mouse
+    # ═══════════════════════════════════════════════════════════════════════
+    
+    mouse_left_click = close_current
+    mouse_middle_click = do_action, close_current
+    mouse_right_click = close_all
+
+# ═══════════════════════════════════════════════════════════════════════════
+# URGENCY LEVELS - Catppuccin Mocha
+# ═══════════════════════════════════════════════════════════════════════════
+
+[urgency_low]
+    background = "#1e1e2e"
+    foreground = "#cdd6f4"
+    frame_color = "#89b4fa"
+    highlight = "#89b4fa"
+    timeout = 5
+    default_icon = dialog-information
+
+[urgency_normal]
+    background = "#1e1e2e"
+    foreground = "#cdd6f4"
+    frame_color = "#b4befe"
+    highlight = "#b4befe"
+    timeout = 10
+    default_icon = dialog-information
+
+[urgency_critical]
+    background = "#1e1e2e"
+    foreground = "#cdd6f4"
+    frame_color = "#f38ba8"
+    highlight = "#f38ba8"
+    timeout = 0
+    default_icon = dialog-warning
+
+# ═══════════════════════════════════════════════════════════════════════════
+# APP-SPECIFIC RULES
+# ═══════════════════════════════════════════════════════════════════════════
+
+# Volume notifications
+[volume]
+    appname = "volume"
+    background = "#1e1e2e"
+    foreground = "#cdd6f4"
+    frame_color = "#a6e3a1"
+    highlight = "#a6e3a1"
+    timeout = 2
+
+# Brightness notifications
+[brightness]
+    appname = "brightness"
+    background = "#1e1e2e"
+    foreground = "#cdd6f4"
+    frame_color = "#f9e2af"
+    highlight = "#f9e2af"
+    timeout = 2
+
+# Music/MPD notifications
+[music]
+    appname = "mpd"
+    background = "#1e1e2e"
+    foreground = "#cdd6f4"
+    frame_color = "#cba6f7"
+    highlight = "#cba6f7"
+    timeout = 5
+
+[spotify]
+    appname = "Spotify"
+    background = "#1e1e2e"
+    foreground = "#cdd6f4"
+    frame_color = "#a6e3a1"
+    highlight = "#a6e3a1"
+    timeout = 5
+
+# Screenshot notifications
+[screenshot]
+    appname = "screenshot"
+    background = "#1e1e2e"
+    foreground = "#cdd6f4"
+    frame_color = "#94e2d5"
+    highlight = "#94e2d5"
+    timeout = 3
+
+# Firefox
+[firefox]
+    appname = "Firefox"
+    background = "#1e1e2e"
+    foreground = "#cdd6f4"
+    frame_color = "#fab387"
+    new_icon = firefox
+
+# Telegram
+[telegram]
+    appname = "Telegram*"
+    background = "#1e1e2e"
+    foreground = "#cdd6f4"
+    frame_color = "#89dceb"
+
+# Discord
+[discord]
+    appname = "discord"
+    background = "#1e1e2e"
+    foreground = "#cdd6f4"
+    frame_color = "#b4befe"
+
+# File operations
+[thunar]
+    appname = "Thunar"
+    background = "#1e1e2e"
+    foreground = "#cdd6f4"
+    frame_color = "#f9e2af"
+
+# System notifications
+[notify-send]
+    appname = "notify-send"
+    background = "#1e1e2e"
+    foreground = "#cdd6f4"
+    frame_color = "#89b4fa"
