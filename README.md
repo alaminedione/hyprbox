@@ -1,0 +1,1 @@
+# Ricing hyprland and openbox
