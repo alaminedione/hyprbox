@@ -1,0 +1,10 @@
+[SddmGreeterTheme]
+Name=Catppuccin Mocha
+Description=Un thème élégant aux couleurs Catppuccin Mocha
+Author=alaminedione
+Version=1.0
+Website=https://github.com/alaminedione/catppuccin-sddm
+Screenshot=preview.png
+MainScript=Main.qml
+ConfigFile=theme.conf
+Type=sddm-theme
